@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component} from '@angular/core';
 
 @Component({
   selector: 'app-body',
@@ -6,8 +6,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class BodyComponent {
 
-  frase:any = {
-    mensaje:'Un gran poder lleva responsabilidad',
-    autor:'Ben Parker'
+  mostrar =  true;
+
+  frase: any = {
+    mensaje: 'Un gran poder lleva responsabilidad',
+    autor: 'Ben Parker'
   };
+
+  personajes: string[] = ['spiderman', 'Venom', 'Dr. Octopus'];
+
 }
