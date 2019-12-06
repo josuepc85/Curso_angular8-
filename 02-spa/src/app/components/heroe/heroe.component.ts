@@ -9,15 +9,15 @@ import { HeroesService } from '../../services/heroes.service';
 })
 export class HeroeComponent {
 
-  heroe:any = {};
+  heroe: any = {};
 
 
   constructor( private activatedRoute: ActivatedRoute,
                private heroesService: HeroesService
     ){
 
-    this.activatedRoute.params.subscribe( params =>{
-        this.heroe = this.heroesService.getHeroe( params['id'] );
+    this.activatedRoute.params.subscribe( params => {
+        this.heroe = this.heroesService.getHeroe( params[' id '] );
         // console.log(this.heroe);
     });
 
