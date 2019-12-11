@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { ActivatedRoute } from '@angular/router'
+import { ActivatedRoute } from '@angular/router';
 
 import { HeroesService } from '../../services/heroes.service';
 
@@ -16,11 +16,12 @@ export class HeroeComponent {
                private heroesService: HeroesService
     ){
 
-    this.activatedRoute.params.subscribe( params => {
-        this.heroe = this.heroesService.getHeroe( params[' id '] );
+    this.activatedRoute.params.subscribe( params =>{
+        this.heroe = this.heroesService.getHeroe( params['id'] );
         // console.log(this.heroe);
     });
 
   }
 
 }
+
