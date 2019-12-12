@@ -23,5 +23,4 @@ export class BuscadorComponent implements OnInit {
       console.log(this.heroes);
     } );
   }
-
 }
