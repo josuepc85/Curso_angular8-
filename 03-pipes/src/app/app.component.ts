@@ -5,8 +5,10 @@ import { Component } from '@angular/core';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
+
 export class AppComponent {
-  nombre = 'Fernando';
+  nombre = 'Josue';
+
 
   arreglo = [1,2,3,4,5,6,7,8,9];
 
@@ -31,4 +33,8 @@ export class AppComponent {
   });
 
   fecha = new Date();
+
+  video = 'llHSeXEcDUo';
+
+  activar = true;
 }
