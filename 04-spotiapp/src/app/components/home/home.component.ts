@@ -1,20 +1,10 @@
-import { Component, OnInit } from '@angular/core';
-import { SpotifyService} from '../../services/spotify.service';
+import { Injectable } from '@angular/core';
 
-@Component({
-  selector: 'app-home',
-  templateUrl: './home.component.html',
-  styles: []
+@Injectable({
+  providedIn: 'root'
 })
-export class HomeComponent implements OnInit {
-
-
-  constructor( private spotify: SpotifyService )  {
-
-
+export class SpotifyServe{
+  constructor() {
+    console.log('spotify service listo')
   }
-
-  ngOnInit() {
-  }
-
 }
